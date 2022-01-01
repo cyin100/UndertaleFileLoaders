@@ -18,14 +18,13 @@ TODO: allow for hacked equipment/rooms, boss rush?
 'LOAD': Loads the files from the BACKUP file to your game  
 OTHER : Loads SELECTED position as normal
 
-## Acknowledgements:
+## Acknowledgements/Resources:
 
-### Save Files Sources:
-(UNDERTALE)[https://www.reddit.com/r/Undertale/comments/3szvui/my_undertale_save_files/] - u/HylianAngel
-(DELTARUNE Ch1)[https://gamejolt.com/get/build?game=402285&build=679262] - @WarmColedavid
-(DELTARUNE Ch2)[https://libredd.it/r/Deltarune/comments/pqx6y7/my_save_files_from_deltarune_chapter_2_theres/] - unknown
+#### Save Files:
+[UNDERTALE](https://www.reddit.com/r/Undertale/comments/3szvui/my_undertale_save_files/) - u/HylianAngel  
+[DELTARUNE Ch1](https://gamejolt.com/get/build?game=402285&build=679262) - @WarmColedavid  
+[DELTARUNE Ch2](https://libredd.it/r/Deltarune/comments/pqx6y7/my_save_files_from_deltarune_chapter_2_theres/) - unknown
 
-### Save File Structure/IDs:
-(UNDERTALE)[https://pcy.ulyssis.be/undertale/] - @Mirrawrs
-(DELTARUNE)[https://www.reddit.com/r/Underminers/comments/pw8xv3/dr_ch12_datamining_lists_items_encounters/?utm_source=share&utm_medium=ios_app&utm_name=iossmf] - u/santizhizi
-
+#### Save File Structure/IDs:
+[UNDERTALE](https://pcy.ulyssis.be/undertale/) - @Mirrawrs  
+[DELTARUNE](https://www.reddit.com/r/Underminers/comments/pw8xv3/dr_ch12_datamining_lists_items_encounters/?utm_source=share&utm_medium=ios_app&utm_name=iossmf) - u/santizhizi
