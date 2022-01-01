@@ -1,14 +1,19 @@
-import subprocess
+import subprocess, os
 
-USERNAME = 'conne'                 # Your PC's username
-GAME = 'UNDERTALE'                 # 'UNDERTALE' or 'DELTARUNE'
-SELECTED = 'pacifist_napstablook'  # 
-BACKUP = 'SAVE'                    # 'N/A': SELECTED to GAME; 'SAVE': GAME to BACKUP; 'LOAD': BACKUP to GAME;
+USERNAME = ''                   # Your PC's username
+NAME = 'PLAYER'                 # Your player name
+GAME = 'UNDERTALE'              # 'UNDERTALE' or 'DELTARUNE'
+SELECTED = 'genocide_sans'      # Selected route
+BACKUP = ''                     # '': SELECTED to GAME; 'SAVE': GAME to BACKUP; 'LOAD': BACKUP to GAME;
 
 if GAME == 'UNDERTALE':
     files = ['undertale.ini', 'file0', 'file8', 'file9']
 if GAME == 'DELTARUNE':
     files = ['dr.ini', 'filech1_0', 'filech1_3', 'filech1_9', 'filech2_0', 'filech2_9', 'keyconfig_0.ini']
+
+if BACKUP == 'SAVE':
+    for file in os.listdir('BACKUP\\'):
+        os.remove('BACKUP\\'+file)
 
 for file in files:
 
@@ -40,6 +45,10 @@ for file in files:
         data = inputFile.readlines()
 
         for line in data:
+            if GAME == 'DELTARUNE':
+                line = line.replace('RUNE', NAME)
+            if GAME == 'UNDERTALE':
+                line = line.replace('Rose', NAME)
             outputFile.write(line)
 
         inputFile.close()
