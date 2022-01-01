@@ -1,10 +1,10 @@
 import subprocess, os
 
-USERNAME = ''                   # Your PC's username
+USERNAME = 'conne'                   # Your PC's username
 NAME = 'PLAYER'                 # Your player name
-GAME = 'UNDERTALE'              # 'UNDERTALE' or 'DELTARUNE'
-SELECTED = 'genocide_sans'      # Selected route
-BACKUP = ''                     # '': SELECTED to GAME; 'SAVE': GAME to BACKUP; 'LOAD': BACKUP to GAME;
+GAME = 'DELTARUNE'              # 'UNDERTALE' or 'DELTARUNE'
+SELECTED = 'ch2_ending'      # Selected route
+BACKUP = 'LOAD'                 # '': SELECTED to GAME; 'SAVE': GAME to BACKUP; 'LOAD': BACKUP to GAME;
 
 if GAME == 'UNDERTALE':
     files = ['undertale.ini', 'file0', 'file8', 'file9']
@@ -12,7 +12,7 @@ if GAME == 'DELTARUNE':
     files = ['dr.ini', 'filech1_0', 'filech1_3', 'filech1_9', 'filech2_0', 'filech2_9', 'keyconfig_0.ini']
 
 if BACKUP == 'SAVE':
-    for file in os.listdir('BACKUP\\'):
+    for file in os.listdir('BACKUP'):
         os.remove('BACKUP\\'+file)
 
 for file in files:
@@ -39,6 +39,9 @@ for file in files:
         except FileNotFoundError:
             pass
 
+    if os.path.exists(gameFile):
+        os.remove(gameFile)
+
     try:
         inputFile = open(localFile, 'r')
         outputFile = open(gameFile, 'w')
@@ -59,5 +62,5 @@ for file in files:
 if BACKUP != 'SAVE':
     if GAME == 'UNDERTALE':
         subprocess.Popen('C:\\Program Files (x86)\\Steam\\steamapps\\common\\Undertale\\UNDERTALE')
-    if GAME == 'DELTARUNE':
-        subprocess.Popen('C:\\Program Files (x86)\\Steam\\steamapps\\common\\DELTARUNEdemo\\DELTARUNE')
+    #if GAME == 'DELTARUNE':
+    #    subprocess.Popen('C:\\Program Files (x86)\\Steam\\steamapps\\common\\DELTARUNEdemo\\DELTARUNE')
