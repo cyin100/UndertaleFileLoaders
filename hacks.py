@@ -7,30 +7,28 @@
 #REALKNIFE
 #THELOCKET
 
+USERNAME = 'conne'
 HACK = 'snowgrave'
 WRITETO = 'BACKUP\\filech2_0'
+
+gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\UNDERTALE\\file0'
+gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\DELTARUNE\\filech1_0'
+gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\DELTARUNE\\filech2_0'
+
 copy = 'DELTARUNE\\snowgrave_ending\\filech2_0'
 
+
 if HACK == 'snowgrave':
+    lowerBound = 264
+    upperBound = 325
+    
 
-    inputFile = open(copy, 'r')
-    hacked_data = inputFile.readlines()
 
-    file = open(WRITETO, 'r')
+with open(copy, 'r') as file:
+    hacked_data = file.readlines()
+with open(WRITETO, 'r') as file:
     data = file.readlines()
-    file.close()
-
-    file = open(WRITETO, 'w')
-
-    for i in range(264):
-        file.write(data[i])
-    for i in range(264, 325):
-        file.write(hacked_data[i])
-        print(hacked_data[i])
-    for i in range(325, len(data)):
-        file.write(data[i])
-    
-    file.close()
-    inputFile.close()
-
-    
+for line in range(lowerBound, upperBound):
+    data[line] = hacked_data[line]
+with open(WRITETO, 'w') as file:
+    file.writelines(data)

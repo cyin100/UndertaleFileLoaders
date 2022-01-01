@@ -15,47 +15,21 @@ TODO: allow for hacked equipment/rooms, boss rush?
 
 ## Features
 
-### Load Save Files
+### UNDERTALE Save Files
 ```
-genocide_toriel
-genocide_papyrus
-genocide_undyne
-genocide_sans
-genocide_ending
-pacifist_napstablook
-pacifist_toriel
-pacifist_papyrus
-pacifist_mad_dummy
-pacifist_undyne
-pacifist_muffet
-pacifist_mettaton
-pacifist_asgore
-pacifist_omega_flowey
-pacifist_papyrus_date
-pacifist_undyne_date
-pacifist_alphys_date
-pacifist_asriel
-pacifist_ending
+pacifist_napstablook    pacifist_muffet         pacifist_papyrus_date   genocide_toriel
+pacifist_toriel         pacifist_mettaton       pacifist_undyne_date    genocide_papyrus
+pacifist_papyrus        pacifist_asgore         pacifist_alphys_date    genocide_undyne
+pacifist_mad_dummy      pacifist_omega_flowey   pacifist_asriel         genocide_sans
+pacifist_undyne                                 pacifist_ending         genocide_ending
 ```
+### DELTARUNE Save Files
 ```
-ch1_field
-ch1_forest
-ch1_castle
-ch1_king
-ch1_jevil
-ch2_cyber_world
-ch2_trash_zone
-ch2_berdly
-ch2_spamton
-ch2_mansion
-ch2_acid_lake
-ch2_queen
-ch2_queen_robot
-ch2_spamton_neo
-snowgrave_start
-snowgrave_mansion
-snowgrave_spamton
-snowgrave_ending
+ch1_field               ch2_cyber_world         ch2_mansion             snowgrave_start
+ch1_forest              ch2_rollercoaster       ch2_acid_lake           snowgrave_mansion
+ch1_castle              ch2_trash_zone          ch2_queen               snowgrave_spamton
+ch1_king                ch2_berdly              ch2_queen_robot         snowgrave_ending
+ch1_jevil               ch2_spamton             ch2_spamton_neo
 ```
 
 ### BACKUP functionality
