@@ -1,19 +1,29 @@
-# DeltaruneFileLoaders
+# UndertaleFileLoaders
 
 # WORK IN PROGRESS 
 
-Allows users to efficiently load save files from specific spots in Undertale and Deltarune  
+Allows users to efficiently load save files from specific spots in UNDERTALE and DELTARUNE
 TODO: allow for hacked equipment/rooms, boss rush?
 
+## Requirements
+- Windows
+- Python 3.6 or higher
+- UNDERTALE/DELTARUNE installed from Steam 
+
 ## Instructions
-1. Change USERNAME to your pc's user
-2. Change NAME to the name you'd like your save file to be called
-3. Change GAME to the game you'd like to load (e.g. UNDERTALE)
-4. Change SELECTED the position you'd like to start at (e.g. genocide_sans)
-5. Change BACKUP to your desired backup mode (see below)
-6. run python main.py
+1. run python main.py
+2. Enter PC Username (e.g. user)
+3. Enter your IGN (e.g. Chara)
+4. Enter game you would like select (e.g. DELTARUNE)
+5. Enter backup mode (see below) 
+6. Enter save file to load (e.g. genocide_sans)
 
 ## Features
+
+### Backup Mode
+- 0: Load file from specified position to game 
+- 1: Backup file from game to backup folder
+- 2: Load backup folder into game folders
 
 ### UNDERTALE Save Files
 ```
@@ -31,11 +41,6 @@ ch1_castle              ch2_trash_zone          ch2_queen               snowgrav
 ch1_king                ch2_berdly              ch2_queen_robot         snowgrave_ending
 ch1_jevil               ch2_spamton             ch2_spamton_neo
 ```
-
-### BACKUP functionality
-'SAVE': Loads the files from your game into your BACKUP file  
-'LOAD': Loads the files from the BACKUP file to your game  
-OTHER : Loads SELECTED position as normal
 
 ## Acknowledgements/Resources:
 

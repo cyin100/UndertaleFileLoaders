@@ -1,34 +1,40 @@
-#todo
-#TOPCAKE/REVIVEBRITE
-#EVERYBODYWEAPON
-#DEALMAKER (ch2) JEVILSTAIL (ch1)
+# TODO
+# TOPCAKE/REVIVEBRITE
+# EVERYBODYWEAPON
+# DEALMAKER (ch2) JEVILSTAIL (ch1)
 
-#BUTTERSCOTCH PIE
-#REALKNIFE
-#THELOCKET
+# BUTTERSCOTCH PIE
+# REALKNIFE
+# THELOCKET
+
+def hackFile(copy, paste):
+    with open(copy, 'r') as file:
+        hacked_data = file.readlines()
+    with open(paste, 'r') as file:
+        data = file.readlines()
+    for line in range(bounds[0], bounds[1]):
+        data[line] = hacked_data[line]
+    with open(paste, 'w') as file:
+        file.writelines(data)
 
 USERNAME = 'conne'
-HACK = 'snowgrave'
-WRITETO = 'BACKUP\\filech2_0'
+GAME = 'UNDERTALE'  
+HACK = 'butterscotch'
 
-gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\UNDERTALE\\file0'
-gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\DELTARUNE\\filech1_0'
-gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\DELTARUNE\\filech2_0'
+if GAME == 'UNDERTALE':
+    gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\UNDERTALE\\file0'
 
-copy = 'DELTARUNE\\snowgrave_ending\\filech2_0'
+if GAME == 'DELTARUNE_1':
+    gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\DELTARUNE\\filech1_0'
 
+if GAME == 'DELTARUNE_2':
+    gameFile = 'C:\\Users\\'+USERNAME+'\\AppData\\Local\\DELTARUNE\\filech2_0'
+
+hackedFile = 'HACKED\\'+GAME
 
 if HACK == 'snowgrave':
-    lowerBound = 264
-    upperBound = 325
-    
+    hackFile(gameFile)
+
+if HACK == 'butterscotch':
 
 
-with open(copy, 'r') as file:
-    hacked_data = file.readlines()
-with open(WRITETO, 'r') as file:
-    data = file.readlines()
-for line in range(lowerBound, upperBound):
-    data[line] = hacked_data[line]
-with open(WRITETO, 'w') as file:
-    file.writelines(data)
