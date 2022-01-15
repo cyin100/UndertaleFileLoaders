@@ -1,10 +1,10 @@
 # UndertaleFileLoaders
 
-Allows users to efficiently load save files from specific spots in UNDERTALE and DELTARUNE
+Allows users to efficiently load save files from specific spots in UNDERTALE and DELTARUNE  
 TODO: allow for hacked equipment/rooms, boss rush?
 
 ## Requirements
-- Windows
+- Windows 10 (Not mac supported, sorry!)
 - Python 3.6 or higher
 - UNDERTALE/DELTARUNE installed from Steam 
 
