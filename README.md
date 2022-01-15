@@ -1,7 +1,5 @@
 # UndertaleFileLoaders
 
-# WORK IN PROGRESS 
-
 Allows users to efficiently load save files from specific spots in UNDERTALE and DELTARUNE
 TODO: allow for hacked equipment/rooms, boss rush?
 
