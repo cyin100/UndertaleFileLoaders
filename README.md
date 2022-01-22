@@ -6,10 +6,10 @@ TODO: allow for hacked equipment/rooms, boss rush?
 ## Requirements
 - Windows 10 (Not mac supported, sorry!)
 - Python 3.6 or higher
-- UNDERTALE/DELTARUNE installed from Steam 
+- UNDERTALE/DELTARUNE installed in Steam 
 
 ## Instructions
-1. run python main.py
+1. `python main.py`
 2. Enter PC Username (e.g. user)
 3. Enter your IGN (e.g. Chara)
 4. Enter game you would like select (e.g. DELTARUNE)
